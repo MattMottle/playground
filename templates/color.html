@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color</title>
+<style>
+    .container {
+        margin: 0 auto;
+        padding: 0;
+        box-sizing:border-box;
+        width: 900px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .square {
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        border-radius: 15%;
+        background-color: {{color}};
+    }
+</style>
+</head>
+<body>
+    <h1 style="text-align: center;">Welcome!</h1>
+    <div class="container">
+
+    {% for i in range(num) %}
+        <div class="square"></div>
+    {% endfor %}
+
+</div>
+</body>
+</html>
